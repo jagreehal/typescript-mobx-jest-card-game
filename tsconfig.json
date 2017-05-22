@@ -1,0 +1,21 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "noImplicitReturns": true,
+        "removeComments": true,
+        "strictNullChecks": true,
+        "jsx": "react",
+        "target": "es6",
+        "module": "es6",
+        "lib": ["es6", "es7", "dom"],
+        "sourceMap": true,
+        "typeRoots": ["./node_modules/@types", "types"]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "typescript-mobx-jest-card-game",
+  "version": "1.0.0",
+  "author": "Jag Reehal",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "predev": "tsc",
+    "dev": "concurrently \"npm run watch:tsc\" next",
+    "prestart": "rimraf pages/*.js && tsc -p tsconfig-prod.json && next build",
+    "start": "next start",
+    "tsc": "tsc",
+    "test": "jest",
+    "test-w": "jest --watch",
+    "watch:tsc": "tsc --watch"
+  },
+  "dependencies": {
+    "mobx": "^3.1.9",
+    "mobx-react": "^4.1.8",
+    "next": "beta",
+    "react": "15.5.4",
+    "react-dom": "15.5.4"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.0",
+    "@types/jest": "^19.2.3",
+    "@types/node": "^7.0.21",
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "concurrently": "^3.4.0",
+    "enzyme": "^2.8.2",
+    "jest": "^20.0.3",
+    "mobx-react-devtools": "^4.2.13",
+    "react-addons-test-utils": "^15.5.1",
+    "ts-jest": "^20.0.4",
+    "ts-node": "^3.0.4",
+    "tslint": "^5.2.0",
+    "tslint-react": "^3.0.0",
+    "typescript": "^2.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.spec.(ts|tsx)"
+    ]
+  }
+}

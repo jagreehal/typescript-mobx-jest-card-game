@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.js": "javascriptreact",
+        "*.ts*": "javascriptreact"
+    },
+    "files.exclude": {
+        "cards/**/.js*": true,
+        "stores/**/.js*": true,
+        "containers/**/.js*": true,
+        "pages/**/.js*": true,
+        "types/**/.js*": true,
+        "components/**/.js*": true,
+        "mobx-tests/**/.js*": true
+    },
+    "eslint.enable": false
+}
